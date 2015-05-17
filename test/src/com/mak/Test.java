@@ -8,6 +8,7 @@ public class Test {
 		try{
 			int a=10/0;
 			System.out.println("after exp");
+			
 		}catch(ArithmeticException ae){
 			System.out.println(ae);
 		}catch (Exception e) {
