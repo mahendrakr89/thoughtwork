@@ -14,6 +14,7 @@ public class UserLogin extends HttpServlet {
 			throws ServletException, IOException {
 		// 1. collect the data
 		
+		
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		String message = null;
