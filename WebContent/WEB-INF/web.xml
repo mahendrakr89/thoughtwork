@@ -6,7 +6,7 @@
   </welcome-file-list>
   <servlet>
   <servlet-name>loginservlet</servlet-name>
-  <servlet-class>com.danapani.servlet.UserLogin</servlet-class>
+  <servlet-class>com.danapani.client.UserLogin</servlet-class>
   </servlet>
   <servlet-mapping>
   <servlet-name>loginservlet</servlet-name>

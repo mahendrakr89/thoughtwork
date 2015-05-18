@@ -4,23 +4,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Danapani</title>
+	<title>Danapani</title>
 </head>
-<body>
-<center>
-	<form action="login.htm" method="post">
-		<table>
-			<tr>
-				<td>Username<input type="text" name="username" /></td>
-			</tr>
-			<tr>
-				<td>Password <input type="password" name="password" />
-				</td>
-			</tr>
-		</table>
-		<input type="submit" value="Login" />
+	<body>
+		<form action="login.htm" method="post">
+			<center>
+				<table>
+					<tr><td>Username : <input type ="text" name="username"/></td></tr>
+					<tr><td>Password : <input type ="password" name="password"/></td></tr>
+				</table>
+				<input type ="submit" name="loginSubmit"  value="Login"/>
+			</center>
 		</form>
-		</center>
-</body>
-
+	</body>
 </html>
