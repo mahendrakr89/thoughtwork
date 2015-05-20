@@ -1,19 +1,19 @@
-package com.danapani.pers.mod;
+package com.danapani.to;
 
-public class UserInfo {
+public class Userto {
+	
 	private int userId;
 	private String userName;
 	private String password;
 	
 	
-	public UserInfo(){
+	public Userto(){
 		
 	}
 	
-	public UserInfo(String uName, String password){
+	public Userto(String uName, String password){
 		this.userName = uName;
 		this.password = password;
-		
 	}
 	
 	public int getUserId() {
@@ -34,6 +34,7 @@ public class UserInfo {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
 	
 
 }

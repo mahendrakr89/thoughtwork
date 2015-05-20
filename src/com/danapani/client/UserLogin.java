@@ -8,10 +8,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.danapani.pers.mod.UserInfo;
-import com.danapani.serv.UserInfoServ;
-import com.danapani.serv.impl.UserInfoServImpl;
-import com.danapani.to.UserInfoto;
+import com.danapani.pers.mod.User;
+import com.danapani.serv.UserServ;
+import com.danapani.serv.impl.UserServImpl;
+import com.danapani.to.Userto;
 
 public class UserLogin extends HttpServlet {
 	@Override
@@ -24,10 +24,10 @@ public class UserLogin extends HttpServlet {
 		String password = request.getParameter("password");
 		String message = null;
 		// 2.process the data
-		UserInfoto toUser = new UserInfoto(username, password);
-		UserInfoServ userService = new UserInfoServImpl();
+		Userto toUser = new Userto(username, password);
+		UserServ userService = new UserServImpl();
 		
-		if (userService.checkUser(toUser)) {
+		if (userService.verifyUser(toUser)) {
 			message = "<h1><font color='green'> Welcome to Danapani</font></h>";
 			
 
