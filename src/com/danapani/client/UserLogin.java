@@ -18,8 +18,6 @@ public class UserLogin extends HttpServlet {
 	public  void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// 1. collect the data
-		
-		
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		String message = null;
@@ -28,6 +26,7 @@ public class UserLogin extends HttpServlet {
 		UserServ userService = new UserServImpl();
 		
 		if (userService.verifyUser(toUser)) {
+		System.out.println("Hello");
 			message = "<h1><font color='green'> Welcome to Danapani</font></h>";
 			
 
